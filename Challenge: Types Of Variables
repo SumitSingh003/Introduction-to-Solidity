@@ -1,0 +1,43 @@
+//  SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract types_of_variables{
+
+    uint number;
+    int value;
+    string name;
+    bool answer;
+
+    function setNumber(uint _number) public returns(uint){
+        number = _number;
+        return number;
+    }
+    function getNumber() public view returns(uint){
+        return number;
+    }
+
+    function setValue(int _value) public returns(int){
+        value = _value;
+        return value;
+    }
+    function getValue() public view returns(int){
+        return value;
+    }
+
+    function setName(string memory _name) public returns(string memory){
+        name = _name;
+        return name;
+    }
+    function getName() public view returns(string memory){
+        return name;
+    }
+
+    function setAnswer(bool _answer) public returns(bool){
+        answer = _answer;
+        return answer;
+    }
+    function getAnswer() public view returns(bool){
+        return answer;
+    }
+
+}
